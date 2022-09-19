@@ -12,6 +12,16 @@ const router = createRouter({
       name: "index",
       component: () => import("../views/IndexView.vue"),
     },
+    {
+      path: "/posend",
+      name: "posend",
+      component: () => import("../views/PosendView.vue"),
+    },
+    {
+      path: "/posecls",
+      name: "posecls",
+      component: () => import("../views/PoseclsView.vue"),
+    },
   ],
 });
 

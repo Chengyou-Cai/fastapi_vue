@@ -3,7 +3,7 @@
     :style="{
       margin: '0px 16px',
       padding: '24px',
-      minHeight: '280px',
+      minHeight: '600px',
     }"
   >
     <router-view></router-view>

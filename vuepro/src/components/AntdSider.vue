@@ -3,16 +3,22 @@
     <div class="logo" />
     <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
       <a-menu-item key="0">
-        <field-binary-outlined />
-        <span class="nav-text">Index</span>
+        <router-link to="/index">
+          <field-binary-outlined />
+          <span class="nav-text">Index</span>
+        </router-link>
       </a-menu-item>
       <a-sub-menu key="1">
         <template #title>
           <robot-outlined />
           <span>Pose</span>
         </template>
-        <a-menu-item key="sub1">Pose 2D</a-menu-item>
-        <a-menu-item key="sub2">Pose 3D</a-menu-item>
+        <a-menu-item key="sub1">
+          <router-link to="/posend">Pose nD</router-link>
+        </a-menu-item>
+        <a-menu-item key="sub2">
+          <router-link to="/posecls">Pose Classification</router-link>
+        </a-menu-item>
       </a-sub-menu>
       <a-menu-item key="2">
         <appstore-outlined />

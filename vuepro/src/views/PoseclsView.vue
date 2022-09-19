@@ -1,6 +1,6 @@
 <template>
   <div :style="{ padding: '24px', background: '#fff', textAlign: 'center' }">
-    <a-divider>Index</a-divider>
+    <a-divider>Pose Classification</a-divider>
     <button @click="get_message">{{ message }}</button>
   </div>
 </template>
